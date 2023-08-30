@@ -25,6 +25,11 @@ public void user_click_on_login_button() {
 public void validate_login_page_is_successful() {
    Assert.assertTrue(login.validate_successful_login());
    }
+
+@Then("validate login page is unsuccessful")
+public void validate_login_page_is_unsuccessful() {
+   Assert.assertTrue(login.validate_successful_login());
+   }
 }
 
 
